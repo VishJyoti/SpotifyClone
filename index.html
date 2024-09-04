@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- sidebar start -->
+      <div class="sidebar">
+        <div class="nav">
+          <ul class="nav-option">
+            <li class="logo">
+              <i class="fa-brands fa-spotify"></i> <a href="#">Spotify</a>
+            </li>
+            <li class="home">
+              <i style="margin-right: 10px" class="fa fa-home"></i>
+              <a href="#">Home</a>
+            </li>
+            <li class="search">
+              <i style="margin-right: 10px" class="fa fa-search"></i>
+              <a href="#">Search</a>
+            </li>
+          </ul>
+        </div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-option">
+              <div>
+                <img src="./assets/library_icon.png" alt="" /><a href="#">
+                  Your library</a
+                >
+              </div>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+
+          <div class="lib-box">
+            <div class="boxes">
+              <div class="box">
+                <p class="box-t1">Create your first playlist</p>
+                <p class="box-t2">It's easy we'll help you</p>
+                <button class="btn-badge">Create Playlist</button>
+              </div>
+              <div class="box">
+                <p class="box-t1">Let's find some podcast to follow</p>
+                <p class="box-t2">We'll keep you updated on new episode</p>
+                <button class="btn-badge">Browse Podcast</button>
+              </div>
+            </div>
+
+            <div class="lower-items">
+              <p>legal</p>
+              <p>safety & Privacy Center</p>
+              <p>Privacy Policy</p>
+              <p>Cookies</p>
+              <p>About Ads</p>
+              <p>Accessibility</p>
+              <p>Cookies</p>
+              <div>
+                <button class="lang">
+                  <i class="fa fa-globe"></i> English
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar end -->
+
+      <!-- main content start -->
+      <div class="main-content">
+        <!-- sticy-nav start -->
+        <div class="sticy-nav">
+          <div class="navigator">
+           <a href="#" class="spotify-logo"> <i class="fa-brands fa-spotify" style="font-size: 2rem;"></i></a>
+            <i class="fa-solid fa-angle-left left-icon"></i>
+            <i class="fa-solid fa-angle-right right-icon"></i>
+          </div>
+          <div class="btns">
+            <a class="signup-btn" href="#">Sign Up</a>
+            <button class="btn-badge login-btn">Log in</button>
+          </div>
+        </div>
+        <!-- sticy-nav end -->
+        <div class="player-section">
+          <div class="home-page">
+            <!-- //Popular artists card section start -->
+            <div class="title">
+              <a href="#"><h2>Popular artists</h2></a>
+              <a href="#">Show all</a>
+            </div>
+            <div class="card-container artist">
+              <div class="artist-card">
+                <img src="./assets/pritam.jfif" alt="artist-img" />
+                <h4 class="artist-name">Pritam</h4>
+                <span class="artist-title">Artist</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="artist-card">
+                <img src="./assets/A.R Rhman.jfif" alt="artist-img" />
+                <h4 class="artist-name">A.R Rhman</h4>
+                <span class="artist-title">Artist</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="artist-card">
+                <img src="./assets/arjitsingh.jfif" alt="artist-img" />
+                <h4 class="artist-name">Arjit Singh</h4>
+                <span class="artist-title">Artist</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="artist-card">
+                <img src="./assets/sachin-jigar.jfif" alt="artist-img" />
+                <h4 class="artist-name">Sachine-Jigar</h4>
+                <span class="artist-title">Artist</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="artist-card">
+                <img src="./assets/anirudh.jfif" alt="artist-img" />
+                <h4 class="artist-name">Anirudh Ravichander</h4>
+                <span class="artist-title">Artist</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="artist-card">
+                <img src="./assets/vishal.jfif" alt="artist-img" />
+                <h4 class="artist-name">Vishal Mistra</h4>
+                <span class="artist-title">Artist</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="artist-card">
+                <img src="./assets/atif-aslam.jfif" alt="artist-img" />
+                <h4 class="artist-name">Atif Aslam</h4>
+                <span class="artist-title">Artist</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+            <!-- //Popular artists card section end -->
+
+            <!-- //Popular album card section start -->
+            <div class="title" style="margin-top: 40px">
+              <a href="#"><h2>Popular albums</h2></a>
+              <a href="#">Show all</a>
+            </div>
+            <div class="card-container album">
+              <div class="album-card">
+                <img src="./assets/ashiqui2.jfif" alt="artist-img" />
+                <h4 class="album-name">Aashiqui 2</h4>
+                <span class="album-title"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="album-card">
+                <img src="./assets/making-memories.jfif" alt="artist-img" />
+                <h4 class="album-name">Making memories</h4>
+                <span class="album-title">Karan Aujla , Ikky</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="album-card">
+                <img src="./assets/moosetape.jfif" alt="artist-img" />
+                <h4 class="album-name">Moosetape</h4>
+                <span class="album-title">Sidhu Moose Wala</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="album-card">
+                <img
+                  src="./assets/ye-jawani-hai-diwani.jfif"
+                  alt="artist-img"
+                />
+                <h4 class="album-name">Ye Jawani hai Diwani</h4>
+                <span class="album-title">Pritam</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="album-card">
+                <img src="./assets/animal.jfif" alt="artist-img" />
+                <h4 class="album-name">Animal</h4>
+                <span class="album-title"
+                  >Manan Bhardwaj , Vishal Mishra , jani</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="album-card">
+                <img src="./assets/ek-tha-raja.jfif" alt="artist-img" />
+                <h4 class="album-name">Ek tha Raja</h4>
+                <span class="album-title">Badshah</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="album-card">
+                <img src="./assets/sajni.jfif" alt="artist-img" />
+                <h4 class="album-name">Sajni ("From Laaptaa Ladies")</h4>
+                <span class="album-title"
+                  >Ram Sampath , Arjit Singh , Prashant</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+            <!-- //Popular album card section end -->
+
+            <!-- //popular radio card section start -->
+            <div class="title" style="margin-top: 40px">
+              <a href="#"><h2>Popular radio</h2></a>
+              <a href="#">Show all</a>
+            </div>
+            <div class="card-container radio">
+              <div class="radio-card">
+                <img src="./assets/radio-1.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >With Neha Kakkar , Pritam and more</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/radio-2.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >With Mohammad Rafi , Asha Bhosle , R.D</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/radio-3.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/radio-4.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/radio-5.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/radio-6.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/radio-7.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+            <!-- //popular radio card section end -->
+
+            <!-- //featured charts section start -->
+            <div class="title" style="margin-top: 40px">
+              <a href="#"><h2>Featured Charts</h2></a>
+              <a href="#">Show all</a>
+            </div>
+            <div class="card-container Featured">
+              <div class="radio-card">
+                <img src="./assets/card5img.jpeg" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >With Neha Kakkar , Pritam and more</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/card6img.jpeg" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >With Mohammad Rafi , Asha Bhosle , R.D</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/card1img.jpeg" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/featured-1.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/featured-2.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/featured-3.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+            <!-- //featured charts section end -->
+
+            <!-- //Spotify Playlists section start -->
+            <div class="title" style="margin-top: 40px">
+              <a href="#"><h2>Spotify Playlists</h2></a>
+              <a href="#">Show all</a>
+            </div>
+            <div class="card-container radio">
+              <div class="radio-card">
+                <img src="./assets/playlist-1.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >With Neha Kakkar , Pritam and more</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/playlist-2.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >With Mohammad Rafi , Asha Bhosle , R.D</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/playlist-3.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/playlist-4.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/playlist-5.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/playlist-6.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="radio-card">
+                <img src="./assets/playlist-7.jfif" alt="artist-img" />
+                <span class="radio-title" style="margin-top: 0.8rem"
+                  >Mithon , Ankit tiwari , Jeet Ganguli</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+            <!-- //Spotify Playlists section end -->
+
+            <!-- //trending episodes card section start -->
+            <div class="title" style="margin-top: 40px">
+              <a href="#"><h2>Trading Episodes</h2></a>
+              <a href="#">Show all</a>
+            </div>
+            <div class="card-container album">
+              <div class="album-card">
+                <img src="./assets/episode-1.jfif" alt="artist-img" />
+                <h4 class="album-name">Welcome Back , RJ Balaji- Naallana...</h4>
+                <span class="album-title"
+                  >June 2021 <i class="fa-solid fa-circle fa-2xs"></i> 15 min</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="album-card">
+                <img src="./assets/episode-2.jfif" alt="artist-img" />
+                <h4 class="album-name">#73: Hostel of horrors</h4>
+                <span class="album-title">June 2021 <i class="fa-solid fa-circle fa-2xs"></i> 93 min</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="album-card">
+                <img src="./assets/episode-3.jfif" alt="artist-img" />
+                <h4 class="album-name">Anubis: God of death part 2</h4>
+                <span class="album-title">June 2021 <i class="fa-solid fa-circle fa-2xs"></i> 16 min</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="album-card">
+                <img src="./assets/episode-3.jfif" alt="artist-img" />
+                <h4 class="album-name">Anubis: God of death part 1</h4>
+                <span class="album-title">June 2021 <i class="fa-solid fa-circle fa-2xs"></i> 13 min</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="album-card">
+                <img src="./assets/episode-4.jfif" alt="artist-img" />
+                <h4 class="album-name">Mahabharta Episode 1</h4>
+                <span class="album-title"
+                  >April 2024 <i class="fa-solid fa-circle fa-2xs"></i> 24 min</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="album-card">
+                <img src="./assets/episode-5.jfif" alt="artist-img" />
+                <h4 class="album-name">Ek 8- ye na thi humari kismat</h4>
+                <span class="album-title">August 2020 <i class="fa-solid fa-circle fa-2xs"></i> 3 min</span>
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="album-card">
+                <img src="./assets/episode-6.jfif" alt="artist-img" />
+                <h4 class="album-name">Asatha Povathu Yaru | MAdurai...</h4>
+                <span class="album-title"
+                  >May 2021 <i class="fa-solid fa-circle fa-2xs"></i> 11 min</span
+                >
+                <div class="play-button"><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+            <!-- //trending episodes card section end -->
+          </div>
+
+          <!-- footer section start -->
+          <div class="footer-links">
+            <div class="box-1">
+              <h4>Company</h4>
+              <p>About</p>
+              <p>Jobs</p>
+              <p>for the Record</p>
+            </div>
+            <div class="box-2">
+              <h4>Communities</h4>
+              <p>For Artists</p>
+              <p>Developers</p>
+              <p>Advertising</p>
+              <p>Investors</p>
+              <p>Vendors</p>
+            </div>
+            <div class="box-3">
+              <h4>Useful links</h4>
+              <p>Support</p>
+              <p>Free Mobile App</p>
+            </div>
+            <div class="box-4">
+              <h4>Spotify Plans</h4>
+              <p>Premium Individual</p>
+              <p>Premium Duo</p>
+              <p>Premium Family</p>
+              <p>Premium Student</p>
+              <p>Spotify Free</p>
+            </div>
+            <div class="box-5">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="line">
+              <p style="opacity: 0.8; font-size: 1rem">
+                &copy; 2024 Spotify AB
+              </p>
+            </div>
+          </div>
+          <!-- footer section end -->
+        </div>
+      </div>
+      <!-- main content end -->
+      <div class="music-player">
+        <div class="music-album">
+          <div class="album-img">
+            <img src="./assets/card2img.jpeg" alt="" />
+          </div>
+          <div class="music-album-title">
+            <p>Domestic Sweater</p>
+            <span>Wardell</span>
+          </div>
+          <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+        </div>
+        <div class="player">
+          <div class="player-controls">
+            <img
+              src="./assets/player_icon1.png"
+              alt=""
+              class="player-control-icons"
+            />
+            <img
+              src="./assets/player_icon2.png"
+              alt=""
+              class="player-control-icons"
+            />
+            <img
+              src="./assets/player_icon3.png"
+              alt=""
+              class="player-control-icons"
+            />
+            <img
+              src="./assets/player_icon4.png"
+              alt=""
+              class="player-control-icons"
+            />
+            <img
+              src="./assets/player_icon5.png"
+              alt=""
+              class="player-control-icons"
+            />
+          </div>
+          <div class="playback-bar">
+            <span class="current-time">00:00</span>
+            <input
+              type="range"
+              class="progress-bar"
+              min="0"
+              max="100"
+              step="1"
+            />
+            <span class="last-time">3:33</span>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="control-icons">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-regular fa-paste"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range" />
+          </div>
+          <div class="screen-resizer" style="align-self: right">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
